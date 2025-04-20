@@ -1,70 +1,106 @@
-# Welcome to your Lovable project
+# 🧠 AI Branding Assistant
 
-## Project info
+**AI Branding Assistant** is a powerful web-based tool designed to help startups, entrepreneurs, and creators build their brand identity with ease using AI. It offers smart logo generation, dynamic color palette selection, typography recommendations, and themed image generation — all in one place.
 
-**URL**: https://lovable.dev/projects/32a39a30-d864-44ba-b912-241f7810c551
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- **AI-Powered Brand Generation**  
+  Generate brand assets like logos, color palettes, and typography using prompts and AI.
 
-**Use Lovable**
+- **Dynamic Color Palette & Theme Customization**  
+  Customize color schemes with instant preview and matching typography.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/32a39a30-d864-44ba-b912-241f7810c551) and start prompting.
+- **Logo Creation & Preview**  
+  Generate modern logos based on business category, name, and aesthetic preferences.
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Themed Image Generation & Enhancement**  
+  Generate and refine brand visuals that align with your identity.
 
-**Use your preferred IDE**
+- **Authentication & User Management**  
+  Seamless login via Clerk and Firestore-backed user data handling.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Responsive UI & Real-time Feedback**  
+  Clean, interactive interface with live updates and feedback.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠 Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Frontend:** React (Vite), Tailwind CSS  
+- **Backend:** TypeScript  
+- **Authentication:** Clerk  
+- **Database:** Firebase Firestore  
+- **AI APIs:** Gemini, GitHub (Text/Image models)  
+- **Deployment:** Docker, Vercel
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📁 Directory Structure:
+└── saikishoremsk-ai-branding-assitant/
+    ├── README.md
+    ├── components.json
+    ├── eslint.config.js
+    ├── index.html
+    ├── package.json
+    ├── postcss.config.js
+    ├── tailwind.config.ts
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    ├── vite.config.ts
+    ├── .env.example
+    ├── public/
+    └── src/
+        ├── App.css
+        ├── App.tsx
+        ├── env.d.ts
+        ├── index.css
+        ├── main.tsx
+        ├── vite-env.d.ts
+        ├── components/
+        │   ├── BrandingSuggestions.tsx
+        │   ├── ColorPalette.tsx
+        │   ├── Header.tsx
+        │   ├── ImageThemer.tsx
+        │   ├── LogoGenerator.tsx
+        │   ├── PromptInput.tsx
+        │   ├── ThemePreview.tsx
+        │   ├── TokenManager.tsx
+        │   └── ui
+        ├── hooks/
+        │   ├── use-mobile.tsx
+        │   ├── use-toast.ts
+        │   ├── useColorGeneration.ts
+        │   └── useStoreUser.tsx
+        ├── lib/
+        │   ├── firebase.ts
+        │   └── utils.ts
+        ├── pages/
+        │   ├── Index.tsx
+        │   └── NotFound.tsx
+        └── services/
+            ├── geminiAI.ts
+            └── githubAI.ts
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+-------------------------------------------------------------------------
 
-**Edit a file directly in GitHub**
+🧪 How to Run
+1.Clone the Repository
+    git clone https://github.com/saikishoreMSK/ai-branding-assitant.git
+    cd ai-branding-assitant
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+2.Install Dependencies
+    npm i
 
-**Use GitHub Codespaces**
+3.Set Up Environment Variables
+  Create a .env file in the root directory and add the following keys:
+    VITE_GITHUB_TOKEN=your_github_token_here
+    VITE_GEMINI_API_KEY=your_gemini_api_key_here
+    VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key_here
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+4.Start the Development Server
+    npm run dev
 
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/32a39a30-d864-44ba-b912-241f7810c551) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
-# ai-branding-assitant
+5.✅ Ensure Firebase and Clerk are properly configured before proceeding.
