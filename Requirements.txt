@@ -1,0 +1,39 @@
+# Core Framework
+react
+react-dom
+vite
+typescript
+
+# UI & Styling
+tailwindcss
+postcss
+autoprefixer
+
+# Authentication
+@clerk/clerk-react
+@clerk/nextjs
+
+# Firebase
+firebase
+
+# State Management & Utilities
+axios
+
+# AI API Communication
+openai (if needed)
+github model
+dotenv
+
+# Development Tools
+eslint
+eslint-plugin-react
+eslint-plugin-tailwindcss
+eslint-config-prettier
+prettier
+
+# Types
+@types/react
+@types/react-dom
+
+# Vite Plugins & Config
+vite-tsconfig-paths
